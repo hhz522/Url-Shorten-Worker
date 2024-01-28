@@ -14,7 +14,7 @@ let res
     }).then(function(response) {
     return response.json();
   })
-  .then(function(myJson) {
+  。then(function(myJson) {
     res = myJson;
     document.getElementById("searchbtn").disabled=false;
 	document.getElementById("searchbtn").innerHTML=' Shorten it';
@@ -64,7 +64,7 @@ let res
   $(function () {
     $('[data-toggle="popover"]').popover()
   })
-  console.log("https://github.com/xyTom/Url-Shorten-Worker/")
+  console.log("Hi,boy!")
   let notice="Notice: This service is for demonstration purposes only and the generated short links will automatically expire after 24 hours."
   if(window.location.host=="lnks.eu.org"){
     document.getElementById("notice").innerHTML=notice
