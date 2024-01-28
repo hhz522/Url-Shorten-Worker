@@ -1,7 +1,7 @@
 let res
   function shorturl() {
     if(document.querySelector("#text").value==""){
-        alert("Url cannot be empty!")
+        alert("请输入网址!")
         return
     }
 
@@ -14,7 +14,7 @@ let res
     }).then(function(response) {
     return response.json();
   })
-  .then(function(myJson) {
+  。then(function(myJson) {
     res = myJson;
     document.getElementById("searchbtn").disabled=false;
 	document.getElementById("searchbtn").innerHTML=' Shorten it';
